@@ -1,0 +1,26 @@
+{
+    "name": "signalforge/terminal",
+    "description": "Pure PHP implementation of the signalforge_terminal C extension - Terminal control, styling, and interactive UI",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.3",
+        "ext-posix": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Signalforge\\Terminal\\": "src/Signalforge/Terminal/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Signalforge\\Terminal\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
